@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cfhapi
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 44301
+    targetPort: 44301
+  selector:
+    app: cfhapi

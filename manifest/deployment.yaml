@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cfhapi
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cfhapi
+  template:
+    metadata:
+      labels:
+        app: cfhapi
+    spec:
+      containers:
+      - name: cfhapi
+        image: gcr.io/steel-wharf-305823/cfh-api:latest
+        ports:
+        - containerPort: 44301
