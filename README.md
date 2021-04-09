@@ -1,7 +1,7 @@
 ## Structure
 
 `src` contains the whole source code of the api.
-Inside `src`, there are three directories: `api`, `config`, `constants` and one `index.js` file which will be the entry point to the application
+Inside `src`, there are three directories: `api`, `config`, `constants` and one `index.js` file which will be the entry point to the application.
 
 ### `constants` directory
 
